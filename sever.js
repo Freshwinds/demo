@@ -30,7 +30,7 @@ orm.connect('sqlite:/home/freshwinds/demo/new.db ', function(err, db) {
 app.use(orm.express("sqlite:/home/freshwinds/demo/new.db", {
     define: function (db, models, next) {
         models.articles=db.define("articles",{
-            id:{type:'number'},
+            id:{type:'numnodeber'},
             contents:{type:'text'},
             comments:{type:'text'},
             order:{type:'number'},
